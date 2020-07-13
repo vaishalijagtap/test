@@ -1,0 +1,168 @@
+{
+	"id": "3f215fc2-fcd4-dca9-6e34-4c67c0f3ebf9",
+	"name": "Marketing_Campaign",
+	"description": "",
+	"order": [
+		"51d4d837-ab9c-13ba-0a88-14215f3553c4",
+		"d79f48b6-5688-913a-6272-722f33a7b527",
+		"7ad74566-1933-1f16-1f7a-95eb86a752dd",
+		"59bd0944-407d-3e55-b53c-224cf940437d"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1594679060901,
+	"owner": "10070014",
+	"public": false,
+	"requests": [
+		{
+			"id": "51d4d837-ab9c-13ba-0a88-14215f3553c4",
+			"headers": "",
+			"headerData": [
+				{
+					"key": "",
+					"value": "",
+					"description": "",
+					"enabled": false
+				}
+			],
+			"url": "http://localhost/test/index.php?first_name=Vaishali&last_name=J&email=v.j1@test.com&action=create",
+			"queryParams": [
+				{
+					"key": "first_name",
+					"value": "Vaishali",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "last_name",
+					"value": "J",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "email",
+					"value": "v.j1@test.com",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "action",
+					"value": "create",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": "",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1594681949774,
+			"name": "createUser",
+			"description": "API to add user to campaign\nMethod: POST\nParams:\naction=create,\nfirst_name,\nlast_name,\nemail",
+			"collectionId": "3f215fc2-fcd4-dca9-6e34-4c67c0f3ebf9",
+			"responses": []
+		},
+		{
+			"id": "59bd0944-407d-3e55-b53c-224cf940437d",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost/test/index.php",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "3f215fc2-fcd4-dca9-6e34-4c67c0f3ebf9",
+			"data": null,
+			"dataMode": "params",
+			"name": "ReadALL",
+			"description": "API to display all data\n",
+			"descriptionFormat": "html",
+			"time": 1594682774326,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "7ad74566-1933-1f16-1f7a-95eb86a752dd",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost/test/index.php?userId=1",
+			"queryParams": [
+				{
+					"key": "userId",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "3f215fc2-fcd4-dca9-6e34-4c67c0f3ebf9",
+			"data": null,
+			"dataMode": "params",
+			"name": "Details",
+			"description": "API to display user details\nMethod: POST\nParams: \nuserId",
+			"descriptionFormat": "html",
+			"time": 1594682699218,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "d79f48b6-5688-913a-6272-722f33a7b527",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost/test/index.php?action=optout&email=test@test.com",
+			"queryParams": [
+				{
+					"key": "action",
+					"value": "optout",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "email",
+					"value": "test@test.com",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "3f215fc2-fcd4-dca9-6e34-4c67c0f3ebf9",
+			"data": null,
+			"dataMode": "params",
+			"name": "OptOut",
+			"description": "API to optout user from campaign\nMethod: POST\nParams:\naction=optout,\nemail",
+			"descriptionFormat": "html",
+			"time": 1594682238734,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		}
+	]
+}
